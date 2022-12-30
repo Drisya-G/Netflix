@@ -1,0 +1,38 @@
+.banner{
+    height: 500px;
+    object-fit: contain;
+    width: 100%;
+   
+}
+.banner_content{
+    /* padding-top: 450px; */
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    width: 80%;
+    transform: translate(-50%,-50%);
+
+}
+
+
+.banner_title{
+    animation-name: slide;
+    animation-duration: 2s;
+}
+.banner_desc{
+    animation-name: slide;
+    animation-duration: 2s;
+    animation-delay: .5s;
+    animation-fill-mode: backwards;
+}
+@keyframes slide{
+    0%{
+        transform: translateX(-1000px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+}
